@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "maraudersmap-tiles"
 version = "0.1.0"
-description = ""
+description = "Tile server for the Marauder's Map Project"
 authors = ["Mathias Oterhals Myklebust <mathias@oterbust.no>"]
 readme = "README.md"
 

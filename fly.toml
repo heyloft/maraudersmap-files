@@ -1,6 +1,6 @@
 # fly.toml file generated for heyloft-maraudersmap-files on 2022-09-22T11:37:49+02:00
 
-app = "heyloft-maraudersmap-files"
+app = "heyloft-maraudersmap-tiles"
 kill_signal = "SIGINT"
 kill_timeout = 5
 processes = []
