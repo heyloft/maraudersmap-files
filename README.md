@@ -6,6 +6,10 @@
 ![Python Version](https://img.shields.io/badge/python-3.10-brightgreen)
 ![License](https://img.shields.io/github/license/heyloft/maraudersmap?color=blue)
 
+> A tile server provides a directory of PNG files that each make out a portion of a map. This can be used to render a web map by stitching together multiple portions based on the users viewing position and zoom level.
+>
+> See ["Tiled web map" on Wikipedia](https://en.wikipedia.org/wiki/Tiled_web_map)
+
 ## 🗺️ Tiles API endpoint
 ```
 /tiles/{z}/{x}/{y}.png
@@ -40,6 +44,8 @@ poetry run uvicorn main:app
 Got a custom map as SVG/PNG/JPG and want to create tiles for it?
 
 See [TILES_PRODUCTION.md](TILES_PRODUCTION.md)
+
+When you're done, make sure your new tiles are placed in the `tiles` directory.
 
 ## 🌐 Deployment
 The tile server can be deployed in a lot of places. We currently use [Fly.io](https://fly.io/) for quick prototyping.
