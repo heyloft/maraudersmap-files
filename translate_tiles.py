@@ -70,7 +70,7 @@ def translate_and_write_tiles(
         shutil.copy(relative_tile_path, f"{dest_dir}/{global_tile.y}.png")
 
 
-def main():
+if __name__ == "__main__":
     translate_and_write_tiles(
         source_path=sys.argv[5],
         output_path=sys.argv[6],
@@ -78,7 +78,3 @@ def main():
         global_tile=Tile(int(sys.argv[1]), int(sys.argv[2]), int(sys.argv[3])),
         global_max_zoom=int(sys.argv[4]),
     )
-
-
-if __name__ == "__main__":
-    main()
