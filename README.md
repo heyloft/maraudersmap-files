@@ -49,6 +49,17 @@ When you're done, make sure your new tiles are placed in the `tiles` directory.
 
 ## 🌐 Deployment
 The tile server can be deployed in a lot of places. We currently use [Fly.io](https://fly.io/) for quick prototyping.
+
+### 🤖 GitHub Actions
+
+GitHub Actions is used to deploy automatically on branch updates.
+
+See the GitHub Action [workflow file](.github/workflows/flyio_deploy.yaml) for more details.
+
+Depends on the `FLY_API_TOKEN` repository secret, and assumes that the corresponding user already has a Fly.io app with the name defined in `fly.toml`.
+
+### 💪 Manually
+
 1. Install [`flyctl`](https://fly.io/docs/hands-on/install-flyctl/)
 2. Create an account with `fly auth signup` or login with `fly auth login`
 3. Deploy

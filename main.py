@@ -1,7 +1,6 @@
 from fastapi import FastAPI
+from fastapi.routing import Mount
 from fastapi.staticfiles import StaticFiles
 
 
-app = FastAPI()
-
-app.mount("/tiles", StaticFiles(directory="tiles"), name="tiles")
+app = FastAPI(routes=[Mount("/tiles", app=StaticFiles(directory="tiles"), name="tiles")])
